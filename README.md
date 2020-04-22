@@ -1,2 +1,2 @@
 # Hourly-Pay-Assignment-UM
- Created a script to compute hourly wage based on user input.
+ Followed project guidelines to create a basic script to compute hourly wage based on user input.
