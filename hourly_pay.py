@@ -1,9 +1,14 @@
+def computepay (h,r):
+
+    if h > 40 :
+    	regular_hours = h * r
+    	over_time = (h - 40.0) * (r * 0.5)
+    	pay = regular_hours + over_time
+    elif h <= 40 :
+    	pay = h * r
+    return pay
+
 hrs = int(input("Enter Hours:"))
 rate = float(input("Enter Rate:"))
-if hrs > 40 :
-    regular_hours = hrs * rate
-    over_time = (hrs - 40.0) * (rate * 0.5)
-    pay = regular_hours + over_time
-elif hrs <= 40 :
-    pay = hrs * rate
-print(pay)
+new_pay = computepay(hrs,rate)
+print("Pay", new_pay)
